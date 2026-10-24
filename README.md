@@ -25,6 +25,17 @@ Open [localhost:4795/home/](http://localhost:4795/home/). Use the arrow keys, En
 
 The public preview uses the included Manrope, Geist and Newsreader fonts.
 
+## Nix shell
+
+`flake.nix` is this fork's Tizen web CLI, certificate tools and SDB, built from [nix-tizen-sdk](https://github.com/griffi-gh/nix-tizen-sdk). Those packages are unfree. This is Linux x86_64.
+
+```sh
+nix develop --accept-flake-config
+tizen version
+```
+
+The first shell copies the SDK to `~/.local/share/cleanframe/tizen-studio`. Signing certificates and the TV address stay outside the repo. The upstream `mkTizenSdk` helper fails while writing `sdk.version` into the Nix store, so this flake joins the same packages itself.
+
 ## What you can change
 
 - Choose a List or Dock layout, with icons, names or both.
