@@ -16,5 +16,11 @@
     "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/tubi.svg",
     "licence": "CC0-1.0",
     "note": "Shape unchanged; white fill for launcher."
+  },
+  {
+    "icon": "jellyfin",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/jellyfin.svg",
+    "licence": "CC0-1.0",
+    "note": "Shape unchanged; white fill for launcher."
   }
 ]
